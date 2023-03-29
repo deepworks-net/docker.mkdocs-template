@@ -7,10 +7,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
         with:
           python-version: 3.x
-      - run: cd docs
-      - run: pip install -r mkdocs.reqs
-      - run: mkdocs gh-deploy --force
+      - run: pip install -r docs/mkdocs.reqs
+      - run: cd docs && mkdocs gh-deploy --force
