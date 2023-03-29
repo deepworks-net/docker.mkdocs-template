@@ -1,0 +1,70 @@
+site_name: MkDocs Template
+site_description: Use This Template To Start a New Project
+site_author: Matt Buske
+copyright: Matt Buske 2023
+repo_name: github
+repo_url: https://github.com/mattbuske/mkdocs-template
+docs_dir: docs
+site_dir: site
+extra:
+    version: 0.0.0
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  - search
+  - macros
+  - tags
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+theme:
+    name: material
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.tabs
+        #- navigation.tabs.sticky
+        - navigation.indexes
+        - navigation.top
+        - content.tabs
+        - content.tabs.link
+        - content.code.copy
+        - search.suggest
+        - search.highlight
+        - search.share
+        #- toc.integrate
+    palette:
+      # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue 
+      accent: blue
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue 
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+'nav':
+    - 'Home': 
+        - 'index.md'
+    - 'About':
+        - 'Code Of Conduct': 'about/code-of-conduct.md'
+        - 'Contributing': 'about/contributing.md'
+        - 'License': 'about/license.md'
+        - 'Release Notes': 'about/release-notes.md'
+        - 'Roadmap': 'about/roadmap.md'

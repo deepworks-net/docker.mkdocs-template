@@ -1,0 +1,12 @@
+#
+# DO NOT MODIFY THIS FILE DIRECTLY UNLESS YOU ARE MODIFYING THE TEMPLATE!!
+#
+
+# Copy this file, rename to 'user.mkdocs.yml' and add the proper domain below
+# This is required as the generator utilizes the site_url to determine the absolute path
+# for css/js/etc (otherwise it always will look for assets in the root - '/assets')
+# NOTE: This repo ignores the user.mkdocs.yml and must be created before using!
+# 
+# Useage: 'python -m mkdocs build -f user.mkdocs.yml'
+INHERIT: mkdocs.yml
+site_url: https://github.com/{~ INSERT YOUR PROJECT HERE! ~}
