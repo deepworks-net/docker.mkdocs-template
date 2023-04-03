@@ -1,9 +1,9 @@
 site_name: MkDocs Template
 site_description: Use This Template To Start a New Project
-site_author: Matt Buske
-copyright: Matt Buske 2023
+site_author: Deepworks
+copyright: Deepworks 2023
 repo_name: github
-repo_url: https://github.com/mattbuske/mkdocs-template
+repo_url: https://github.com/deepworks-net/mkdocs-template
 docs_dir: docs
 site_dir: site
 extra:
